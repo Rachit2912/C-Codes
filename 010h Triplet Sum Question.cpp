@@ -17,8 +17,8 @@ vector<vector<int>> findTriplets(vector<int>arr, int n, int K) {
 				a.push_back({arr[i],arr[l],arr[r]});
 				l++;r--;
 
-				while((l<r) && (arr[l]=arr[l-1])){l++;}
-				while((l<r) && (arr[r]=arr[r+1])){r--;}
+				while((l<r) && (arr[l]==arr[l-1])){l++;}
+				while((l<r) && (arr[r]==arr[r+1])){r--;}
 			}
 
 			else if(s<K){
